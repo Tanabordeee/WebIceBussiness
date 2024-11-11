@@ -33,7 +33,7 @@ export default async function Home() {
           <div className="flex flex-col items-center mb-10 lg:mb-0 lg:mr-10 justify-between">
             <div className="mb-20">
               <h2
-                className="text-[48px] text-center text-white font-black mb-4"
+                className=" text-[30px] 2xl:text-[48px] text-center text-white font-black mb-4"
                 style={{
                   textShadow:
                     "3px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000",
