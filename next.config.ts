@@ -5,9 +5,6 @@ const nextConfig: NextConfig = {
     domains: ['asiaice.co.th', 'i.imgur.com'],
   },
   serverExternalPackages: ['mongoose'],
-  experimental: {
-    optimizeCss: true, 
-  },
 };
 
 export default nextConfig;
