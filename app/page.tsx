@@ -66,6 +66,7 @@ export default async function Home() {
               className="max-w-full h-auto rounded-lg"
               width={500} 
               height={300}
+              priority
             />
           </div>
         </div>
