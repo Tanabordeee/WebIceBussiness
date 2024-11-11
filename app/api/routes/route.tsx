@@ -23,13 +23,13 @@ export async function POST(req:Request){
     }
 }
 
-export async function GET(){
-    try{
-        await connectMongoDB();
-        const customer = await Customer.find({});
-        return NextResponse.json({ customer });
-    }catch(error){
-        console.error('Error handling POST request:', error);
-        return NextResponse.json({ error: 'Something went wrong' }, { status: 500 });
+export async function GET() {
+    try {
+      await connectMongoDB();
+      const customer = await Customer.find({}).limit(50); 
+      return NextResponse.json({ customer });
+    } catch (error) {
+      console.error('Error handling GET request:', error);
+      return NextResponse.json({ error: 'Something went wrong' }, { status: 500 });
     }
-}
+  }
