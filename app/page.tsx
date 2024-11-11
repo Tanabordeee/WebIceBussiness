@@ -64,7 +64,7 @@ export default async function Home() {
               src="https://i.imgur.com/jIjk5tA.jpeg"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
-              width={500} 
+              width={300} 
               height={300}
               priority
             />
