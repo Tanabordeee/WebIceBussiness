@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import dynamic from "next/dynamic";
 import Nav from "./navbar";
 import MapEmbed from "./MapEmbed";
 import TelButton from "./telButton";
@@ -19,6 +20,15 @@ export default async function Home() {
           name="keywords"
           content="ร้านน้ำแข็ง ใกล้ฉัน, ส่งน้ำแข็ง ใกล้ฉัน, เช่าถังน้ำแข็ง, น้ำแข็งหลอดเล็ก, น้ำแข็งป่น, โรงน้ำแข็ง, เช่าถังน้ำแข็ง ใกล้ฉัน , ส่งน้ำแข็งในปทุมธานี , บริการทันใจ พร้อมราคาถูก"
         />
+        <style>
+          {`
+            /* Inline critical CSS here */
+            body {
+              font-family: 'Kanit', sans-serif;
+            }
+            /* Add other critical styles here */
+          `}
+        </style>
         <meta property="og:title" content="ร้านน้ำแข็ง ใกล้ฉัน" />
         <meta
           property="og:description"
@@ -26,11 +36,7 @@ export default async function Home() {
         />
         <meta property="og:image" content="URL_of_image_here" />
         <meta property="og:url" content="https://your-website-url.com" />
-        <link
-          rel="preload"
-          href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;900&display=swap"
-          as="style"
-        />
+        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;900&display=swap" as="style" />
       </Head>
       <Nav />
       <div className="flex flex-col items-center h-lvh">
@@ -64,7 +70,7 @@ export default async function Home() {
               src="https://i.imgur.com/jIjk5tA.jpeg"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
-              width={300} 
+              width={500} 
               height={300}
               priority
             />
