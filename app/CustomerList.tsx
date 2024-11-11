@@ -3,6 +3,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import { AxiosError } from "axios";
+
 interface Customer {
   url: string;
   alt_description: string;
@@ -38,7 +39,7 @@ export default function CustomerList() {
             <Image
               src={item.url}
               alt={item.alt_description}
-              width={400}  // Example fixed width
+              width={400} 
               height={300}
               className="object-cover w-full h-full"
             />

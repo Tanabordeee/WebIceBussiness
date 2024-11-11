@@ -59,7 +59,6 @@ export default async function Home() {
               src="https://i.imgur.com/jIjk5tA.jpeg"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
-              layout="responsive"
               width={500} 
               height={300}
             />
@@ -102,7 +101,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/small-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300} 
               />
@@ -113,7 +111,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300} 
               />
@@ -124,7 +121,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/frozen-ice-backgrounds-white-cold-1.webp"
                 alt="น้ำแข็งป่น"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300} 
               />
@@ -137,7 +133,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-5.webp"
                 alt="น้ำแข็งซอง"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300} 
               />
@@ -148,7 +143,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-7.webp"
                 alt="น้ำแข็งหลอดแบบแพ็ค"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500} 
                 height={300}
               />
@@ -164,7 +158,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/04/department-store-market-flea-retail-shop-commercial-provider-vendor-bangkok-rama3-rama4-chonburi-prachinburi-chacheongsao-asia-ice-bangna.webp"
                 alt="ส่งน้ำแข็งในปทุมธานี"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300}
               />
@@ -177,7 +170,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/04/red-ice-machine-tub-storage-store-provider-vendor-bangkok-rama3-rama4-chonburi-prachinburi-chacheongsao-asia-ice-bangna.webp"
                 alt="บริการให้เช่าถังน้ำแข็ง"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300} 
               />
@@ -190,7 +182,6 @@ export default async function Home() {
                 src="https://asiaice.co.th/wp-content/uploads/2024/03/asia-ice-bangkok-thailand-bangna-vendor-wholesale-retail-1.webp"
                 alt="ส่งน้ำแข็งในงาน"
                 className="h-80 w-full object-cover rounded-md"
-                layout="responsive"
                 width={500}  
                 height={300} 
               />

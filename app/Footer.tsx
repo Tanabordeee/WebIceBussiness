@@ -1,11 +1,14 @@
 import Link from "next/link";
+import Image from "next/image";
 export default function Footer() {
   return (
     <div className="flex flex-col justify-center item-center w-[80%]">
       <div className="flex justify-center item-center w-full mb-20">
-        <img
+        <Image
           src="https://i.imgur.com/jIjk5tA.jpeg"
           alt="Ice Delivery"
+          width={500}
+          height={300}
           className="2xl:w-[15%] xl:w-[20%] w-full h-auto rounded-lg"
         />
       </div>
