@@ -34,8 +34,8 @@ export default async function Home() {
           property="og:description"
           content="บริการน้ำแข็งหลากหลายประเภทส่งถึงมือคุณ พร้อมเช่าถังน้ำแข็งในพื้นที่ใกล้คุณ"
         />
-        <meta property="og:image" content="URL_of_image_here" />
-        <meta property="og:url" content="https://your-website-url.com" />
+        <meta property="og:image" content="https://i.imgur.com/jIjk5tA.jpeg" />
+        <meta property="og:url" content="https://web-ice-bussiness.vercel.app/" />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;900&display=swap" as="style" />
       </Head>
       <Nav />
