@@ -37,7 +37,6 @@ export default async function Home() {
         <meta property="og:image" content="URL_of_image_here" />
         <meta property="og:url" content="https://your-website-url.com" />
         <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;900&display=swap" as="style" />
-        <link rel="preload" as="image" href="https://i.imgur.com/jIjk5tA.jpeg" />
       </Head>
       <Nav />
       <div className="flex flex-col items-center h-lvh">
