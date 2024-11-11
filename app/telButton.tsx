@@ -13,7 +13,7 @@ export default function TelButton() {
         });
     
         setTimeout(() => {
-          window.location.href = 'tel:+0894448455';
+          window.location.href = 'tel:+66894448455';
         }, 1000);
       };
 

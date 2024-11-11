@@ -71,7 +71,7 @@ export default function Product() {
                 <div className="flex justify-center items-center">
                   <a
                     className="2xl:px-6 px-2 py-3 bg-[#38878E] text-white md:text-lg rounded-md text-xs 2xl:text-lg"
-                    href="tel:+0894448455"
+                    href="tel:+66894448455"
                   >
                     กดเพื่อสั่งน้ำแข็งหลอดเล็ก
                   </a>
@@ -112,7 +112,7 @@ export default function Product() {
                 <div className="flex justify-center items-center">
                   <a
                     className="2xl:px-6 px-2 py-3 bg-[#38878E] text-white rounded-md md:text-lg text-xs 2xl:text-lg"
-                    href="tel:+0894448455"
+                    href="tel:+66894448455"
                   >
                     กดเพื่อสั่งน้ำแข็งหลอดใหญ่
                   </a>
@@ -150,7 +150,7 @@ export default function Product() {
                 <div className="flex justify-center items-center">
                   <a
                     className="2xl:px-6 px-2 py-3 bg-[#38878E] text-white rounded-md text-xs md:text-lg 2xl:text-lg ml-5 2xl:ml-0 "
-                    href="tel:+0894448455"
+                    href=":tel:+66894448455"
                   >
                     กดเพื่อสั่งน้ำแข็งซอง
                   </a>
@@ -188,7 +188,7 @@ export default function Product() {
                 <div className="flex justify-center items-center">
                   <a
                     className="px-6 py-3 bg-[#38878E] text-white rounded-md md:text-lg text-xs 2xl:text-lg"
-                    href="tel:+0894448455"
+                    href="tel:+66894448455"
                   >
                     กดเพื่อสั่งน้ำแข็งป่น
                   </a>
@@ -235,7 +235,7 @@ export default function Product() {
                 <div className="flex justify-center items-center">
                   <a
                     className="2xl:px-6 px-2 py-3 bg-[#38878E] text-white rounded-md text-xs md:text-lg  2xl:text-lg ml-5 2xl:ml-0"
-                    href="tel:+0894448455"
+                    href=":tel:+66894448455"
                   >
                     กดเพื่อสั่งน้ำแข็งแพ๊ค
                   </a>
