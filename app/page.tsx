@@ -5,6 +5,7 @@ import TelButton from "./telButton";
 import Footer from "./Footer";
 import Head from "next/head";
 import CustomerList from "./CustomerList";
+import Image from "next/image";
 export default async function Home() {
   return (
     <>
@@ -54,10 +55,13 @@ export default async function Home() {
             </div>
           </div>
           <div className="flex justify-center">
-            <img
+            <Image
               src="https://i.imgur.com/jIjk5tA.jpeg"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
+              layout="responsive"
+              width={500} 
+              height={300}
             />
           </div>
         </div>
@@ -94,44 +98,59 @@ export default async function Home() {
           <h1 className="text-3xl font-bold mb-6">สินค้าของเรา</h1>
           <div className="sm:flex-col sm:items-center lg:flex-row flex flex-wrap gap-2 justify-center items-center">
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/small-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300} 
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งหลอดเล็ก</p>
             </div>
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300} 
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งหลอดใหญ่</p>
             </div>
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/frozen-ice-backgrounds-white-cold-1.webp"
                 alt="น้ำแข็งป่น"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300} 
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งป่น</p>
             </div>
           </div>
           <div className="flex-col flex items-center 2xl:flex 2xl:flex-row w-full mt-10 gap-2 justify-center  ">
             <div className="2xl:w-[20%] w-[80%] md:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-5.webp"
                 alt="น้ำแข็งซอง"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300} 
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งซอง</p>
             </div>
             <div className="2xl:w-[20%] w-[80%]  md:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-7.webp"
                 alt="น้ำแข็งหลอดแบบแพ็ค"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500} 
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งหลอดแบบแพ็ค</p>
             </div>
@@ -141,30 +160,39 @@ export default async function Home() {
           <h1 className="text-3xl font-bold mb-6">บริการของเรา</h1>
           <div className="flex flex-col items-center2xl:flex flex-wrap gap-2 2xl:justify-center 2xl:flex-row">
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/04/department-store-market-flea-retail-shop-commercial-provider-vendor-bangkok-rama3-rama4-chonburi-prachinburi-chacheongsao-asia-ice-bangna.webp"
                 alt="ส่งน้ำแข็งในปทุมธานี"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">
                 ส่งน้ำแข็งในปทุมธานี ร้านค้า / ร้านอาหาร / คาเฟ่ / ตลาด
               </p>
             </div>
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/04/red-ice-machine-tub-storage-store-provider-vendor-bangkok-rama3-rama4-chonburi-prachinburi-chacheongsao-asia-ice-bangna.webp"
                 alt="บริการให้เช่าถังน้ำแข็ง"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300} 
               />
               <p className="mt-2 text-lg font-medium">
                 บริการให้เช่าถังน้ำแข็ง พร้อม น้ำแข็ง
               </p>
             </div>
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2024/03/asia-ice-bangkok-thailand-bangna-vendor-wholesale-retail-1.webp"
                 alt="ส่งน้ำแข็งในงาน"
                 className="h-80 w-full object-cover rounded-md"
+                layout="responsive"
+                width={500}  
+                height={300} 
               />
               <p className="mt-2 text-lg font-medium">
                 ส่งน้ำแข็งในงาน Event ต่างๆ

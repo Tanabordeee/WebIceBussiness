@@ -1,5 +1,6 @@
 import Nav from "../navbar";
 import Head from "next/head";
+import Image from "next/image";
 export default function Product() {
   return (
     <>
@@ -41,7 +42,7 @@ export default function Product() {
               จุดเด่นของน้ำแข็งหลอดเล็ก
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/small-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 object-cover rounded-md"
@@ -85,7 +86,7 @@ export default function Product() {
               จุดเด่นของน้ำแข็งหลอดใหญ่
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 object-cover rounded-md"
@@ -124,7 +125,7 @@ export default function Product() {
           <div className="flex flex-col 2xl:w-[90%] m-16 h-auto border bg-white p-10 rounded-md">
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งซอง</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-5.webp"
                 alt="น้ำแข็งซอง"
                 className="h-80 object-cover rounded-md"
@@ -162,7 +163,7 @@ export default function Product() {
           <div className="flex flex-col 2xl:w-[90%] m-16 h-auto border bg-white p-10 rounded-md">
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งป่น</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/frozen-ice-backgrounds-white-cold-1.webp"
                 alt="น้ำแข็งป่น"
                 className="h-80 object-cover rounded-md"
@@ -200,7 +201,7 @@ export default function Product() {
           <div className="flex flex-col 2xl:w-[90%] m-16 h-auto border bg-white p-10 rounded-md">
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งแพ๊ค</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
-              <img
+              <Image
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 object-cover rounded-md"
