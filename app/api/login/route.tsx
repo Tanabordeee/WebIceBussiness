@@ -29,7 +29,7 @@ export const POST = async (req: Request) => {
     } else {
       throw new Error('Login failed');
     }
-  } catch (error) {
+  } catch{
     return new Response(JSON.stringify({ message: 'Login failed' }), { status: 401 });
   }
 };
