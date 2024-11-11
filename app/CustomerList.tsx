@@ -46,7 +46,7 @@ export default function CustomerList() {
           </div>
         ))
       ) : (
-        <div>DON'T HAVE IMAGE</div>
+        <div>DON&apos;T HAVE IMAGE</div>
       )}
     </div>
   );
