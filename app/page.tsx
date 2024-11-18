@@ -167,7 +167,7 @@ export default async function Home() {
           <div className="flex flex-col items-center2xl:flex flex-wrap gap-2 2xl:justify-center 2xl:flex-row">
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/04/department-store-market-flea-retail-shop-commercial-provider-vendor-bangkok-rama3-rama4-chonburi-prachinburi-chacheongsao-asia-ice-bangna.webp"
+                src="https://i.imgur.com/maZNlq7.jpg"
                 alt="ส่งน้ำแข็งในปทุมธานี"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  
@@ -179,7 +179,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/04/red-ice-machine-tub-storage-store-provider-vendor-bangkok-rama3-rama4-chonburi-prachinburi-chacheongsao-asia-ice-bangna.webp"
+                src="https://i.imgur.com/ATyt9GE.jpg"
                 alt="บริการให้เช่าถังน้ำแข็ง"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  
@@ -191,7 +191,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2024/03/asia-ice-bangkok-thailand-bangna-vendor-wholesale-retail-1.webp"
+                src="https://i.imgur.com/9sBoSdh.jpeg"
                 alt="ส่งน้ำแข็งในงาน"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  

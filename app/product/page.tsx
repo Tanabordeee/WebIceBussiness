@@ -46,6 +46,8 @@ export default function Product() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/small-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 object-cover rounded-md"
+                width={600}
+                height={600}
               />
               <div className="2xl:w-[60%] 2xl:mt-0 mt-5">
                 <p className="text-lg mb-4">
@@ -90,6 +92,8 @@ export default function Product() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 object-cover rounded-md"
+                width={600}
+                height={600}
               />
               <div className="2xl:w-[60%] mt-5 2xl:mt-0">
                 <p className="text-lg mb-4">
@@ -129,6 +133,8 @@ export default function Product() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-5.webp"
                 alt="น้ำแข็งซอง"
                 className="h-80 object-cover rounded-md"
+                width={600}
+                height={600}
               />
               <div className="2xl:w-[60%] mt-5 2xl:mt-0">
                 <p className="text-lg mb-4">
@@ -167,6 +173,8 @@ export default function Product() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/frozen-ice-backgrounds-white-cold-1.webp"
                 alt="น้ำแข็งป่น"
                 className="h-80 object-cover rounded-md"
+                width={600}
+                height={600}
               />
               <div className="2xl:w-[60%] mt-5 2xl:mt-0">
                 <p className="text-lg mb-4">
@@ -205,6 +213,8 @@ export default function Product() {
                 src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 object-cover rounded-md"
+                width={600}
+                height={600}
               />
               <div className="2xl:w-[60%] mt-5 2xl:mt-0 ">
                 <p className="text-lg mb-4">
