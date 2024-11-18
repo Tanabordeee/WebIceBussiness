@@ -29,7 +29,7 @@ export default function Login() {
                     text: "Something went wrong!",
                   });
             }
-        }catch(err : any){
+        }catch(err){
             Swal.fire({
                 icon: "error",
                 title: "Login Failure",
