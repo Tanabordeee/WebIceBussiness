@@ -118,7 +118,7 @@ export default function ManageProduct() {
     <div className="flex flex-col justify-center items-center">
       <nav className="flex w-full justify-around items-center p-5">
         <label>Manage Product</label>
-        <button className="bg-green-200 p-5 rounded" onClick={()=>{createStatus ? SetcreateStatus(false) : SetcreateStatus(true)}}>Create Product</button>
+        <button className="bg-green-200 p-5 rounded" onClick={() => SetcreateStatus(prev => !prev)}>Create Product</button>
       </nav>
       {createStatus && <>
         <form action="" onSubmit={handleCreate} className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 p-20 bg-white border rounded shadow-lg gap-5">
