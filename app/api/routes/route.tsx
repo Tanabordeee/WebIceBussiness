@@ -61,9 +61,6 @@ export async function PUT(req:Request){
         );
     }
 }
-type DeleteData = {
-    _id :string
-}
 export async function DELETE(req:Request){
     try{
         const { searchParams } = new URL(req.url);
