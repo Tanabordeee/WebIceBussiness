@@ -1,7 +1,7 @@
 "use client";
 import axios from "axios";
 import Swal from "sweetalert2";
-import { ReactEventHandler, useEffect, useState } from "react";
+import { FormEvent, useEffect, useState } from "react";
 
 type Product = {
   _id: string;
@@ -20,7 +20,7 @@ export default function ManageProduct() {
       if (res.data?.customer) {
         setProduct(res.data.customer);
       }
-    } catch (err: any) {
+    } catch (err) {
       console.error(err);
     }
   }
@@ -90,7 +90,7 @@ export default function ManageProduct() {
           });
     }
   }
-  const handleCreate = async (e:any)=>{
+  const handleCreate = async (e:FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
     try{
         const result = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}`,{
@@ -192,7 +192,7 @@ export default function ManageProduct() {
           </form>
         ))
       ) : (
-        <>Product didn't load...</>
+        <>Product loading...</>
       )}
     </div>
   );
