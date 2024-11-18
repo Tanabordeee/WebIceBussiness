@@ -36,7 +36,6 @@ export default async function Home() {
         />
         <meta property="og:image" content="https://i.imgur.com/jIjk5tA.jpeg" />
         <meta property="og:url" content="https://web-ice-bussiness.vercel.app/" />
-        <link rel="preload" href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;900&display=swap" as="style" />
       </Head>
       <Nav />
       <div className="flex flex-col items-center h-lvh">

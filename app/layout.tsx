@@ -30,6 +30,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+      <link
+          rel="preload"
+          href="https://fonts.googleapis.com/css2?family=Kanit:wght@100;400;700;900&display=swap"
+          as="style"
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
