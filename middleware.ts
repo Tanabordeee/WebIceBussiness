@@ -7,7 +7,7 @@ export async function middleware(req: any) {
       const method = req.method;
       let token = req.cookies.get("token");
       
-      if(pathname === "/api/route" && ["POST" , "PUT" , "DELETE"].includes(method)){
+      if(pathname === "/api/route" && ["POST" , "PUT" , "DELETE"].includes(method) || (pathname === "/manage/product" && method === "GET")){
         if (!token) {
           return new NextResponse("Token is missing", { status: 401 });
         }
@@ -30,9 +30,6 @@ export async function middleware(req: any) {
             headers: requestHeaders,
           },
         });
-      }
-      if(pathname === "/manage/product" && method === "GET"){
-        return NextResponse.next();
       }
       return new NextResponse("Method not allowed", { status: 405 });
     } catch (error: any) {
