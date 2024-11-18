@@ -54,7 +54,7 @@ export async function PUT(req:Request){
             );
         }
         return NextResponse.json({ message: "Update successful" } , {status: 200});
-    }catch(error : any){
+    }catch(error){
         return NextResponse.json(
             { error: "An error occurred while updating the document" },
             { status: 500 }
@@ -80,7 +80,7 @@ export async function DELETE(req:Request){
             );
         }
         return NextResponse.json({ message: "Delete successful" } , {status: 200});
-    }catch(error : any){
+    }catch(error){
         return NextResponse.json(
             { error: "An error occurred while updating the document" },
             { status: 500 }
