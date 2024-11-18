@@ -8,5 +8,5 @@ const CustomerSchema = new Schema(
         timestamps : true
     }
 )
-const Customer = mongoose.models.Post || mongoose.model("Customer",CustomerSchema);
+const Customer = mongoose.models.Customer || mongoose.model("Customer",CustomerSchema);
 export default Customer;
