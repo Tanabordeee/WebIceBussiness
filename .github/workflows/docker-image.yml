@@ -19,7 +19,7 @@ jobs:
       with:
         image: tanabordee/ice_bussiness
         tags: v1, latest
-        dockerfile: Dockerfile.ci
+        dockerfile: Dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
         registry: docker.io
