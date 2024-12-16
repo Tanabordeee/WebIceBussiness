@@ -109,7 +109,7 @@ export default async function Home() {
           <div className="sm:flex-col sm:items-center lg:flex-row flex flex-wrap gap-2 justify-center items-center">
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/small-cylinder-ice.webp"
+                src="https://i.imgur.com/JLhyl7q.jpeg"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  
@@ -119,7 +119,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
+                src="https://i.imgur.com/7hagRM4.jpeg"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  
@@ -129,7 +129,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/frozen-ice-backgrounds-white-cold-1.webp"
+                src="https://i.imgur.com/yESNfck.jpeg"
                 alt="น้ำแข็งป่น"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  

@@ -19,10 +19,7 @@ export default function Product() {
           property="og:description"
           content="เรามีการจัดส่งน้ำแข็งในรูปแบบต่างๆ เช่น น้ำแข็งหลอดเล็ก, น้ำแข็งหลอดใหญ่, น้ำแข็งซอง, น้ำแข็งป่น เพื่อให้คุณได้เลือกตามความต้องการ"
         />
-        <meta property="og:image" content="URL_TO_AN_IMAGE" />
-        <meta property="og:url" content="URL_OF_THE_PRODUCT_PAGE" />
         <meta name="robots" content="index, follow" />
-        <link rel="canonical" href="URL_OF_THE_PRODUCT_PAGE" />
       </Head>
       <div className="p-1">
         <Nav />
@@ -43,7 +40,7 @@ export default function Product() {
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/small-cylinder-ice.webp"
+                src="https://i.imgur.com/JLhyl7q.jpeg"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -89,7 +86,7 @@ export default function Product() {
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
+                src="https://i.imgur.com/7hagRM4.jpeg"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -170,7 +167,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งป่น</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/frozen-ice-backgrounds-white-cold-1.webp"
+                src="https://i.imgur.com/yESNfck.jpeg"
                 alt="น้ำแข็งป่น"
                 className="h-80 object-cover rounded-md"
                 width={600}
