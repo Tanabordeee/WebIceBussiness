@@ -127,7 +127,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งซอง</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-5.webp"
+                src="https://i.imgur.com/oxJhFf3.jpeg"
                 alt="น้ำแข็งซอง"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -207,8 +207,8 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งแพ๊ค</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/big-cylinder-ice.webp"
-                alt="น้ำแข็งหลอดใหญ่"
+                src="https://i.imgur.com/nEG5k02.jpeg"
+                alt="น้ำแข็งหลอดแพ๊ค"
                 className="h-80 object-cover rounded-md"
                 width={600}
                 height={600}

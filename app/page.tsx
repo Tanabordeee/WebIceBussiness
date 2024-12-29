@@ -141,7 +141,7 @@ export default async function Home() {
           <div className="flex-col flex items-center 2xl:flex 2xl:flex-row w-full mt-10 gap-2 justify-center  ">
             <div className="2xl:w-[20%] w-[80%] md:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-5.webp"
+                src="https://i.imgur.com/oxJhFf3.jpeg"
                 alt="น้ำแข็งซอง"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}  
@@ -151,7 +151,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[20%] w-[80%]  md:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://asiaice.co.th/wp-content/uploads/2023/03/blue-water-ripple-textured-wallpaper-7.webp"
+                src="https://i.imgur.com/nEG5k02.jpeg"
                 alt="น้ำแข็งหลอดแบบแพ็ค"
                 className="h-80 w-full object-cover rounded-md"
                 width={500} 
