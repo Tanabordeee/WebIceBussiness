@@ -60,8 +60,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.className} antialiased`}
       >
         {children}
+        <Analytics/>
       </body>
-      <Analytics/>
     </html>
   );
 }
