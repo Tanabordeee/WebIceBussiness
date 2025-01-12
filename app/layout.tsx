@@ -3,7 +3,7 @@ import Head from "next/head";
 import localFont from "next/font/local";
 import { Kanit } from "next/font/google";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/react"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -61,6 +61,7 @@ export default function RootLayout({
       >
         {children}
       </body>
+      <Analytics/>
     </html>
   );
 }
