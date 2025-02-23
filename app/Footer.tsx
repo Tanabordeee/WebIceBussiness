@@ -5,7 +5,7 @@ export default function Footer() {
     <div className="flex flex-col justify-center item-center w-[80%]">
       <div className="flex justify-center item-center w-full mb-20">
         <Image
-          src="https://i.imgur.com/jIjk5tA.jpeg"
+          src="https://img5.pic.in.th/file/secure-sv1/jIjk5tA.webp"
           alt="Ice Delivery"
           width={500}
           height={300}

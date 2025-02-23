@@ -34,7 +34,6 @@ export default async function Home() {
           property="og:description"
           content="บริการน้ำแข็งหลากหลายประเภทส่งถึงมือคุณ พร้อมเช่าถังน้ำแข็งในพื้นที่ใกล้คุณ"
         />
-        <meta property="og:image" content="https://i.imgur.com/jIjk5tA.jpeg" />
         <meta property="og:url" content="https://web-ice-bussiness.vercel.app/" />
       </Head>
       <Nav />
@@ -66,7 +65,7 @@ export default async function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://i.imgur.com/jIjk5tA.jpeg"
+              src="https://img5.pic.in.th/file/secure-sv1/jIjk5tA.webp"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
               width={500} 
