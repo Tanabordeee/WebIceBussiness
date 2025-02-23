@@ -40,7 +40,7 @@ export default function Product() {
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://i.imgur.com/JLhyl7q.jpeg"
+                src="https://img5.pic.in.th/file/secure-sv1/JLhyl7q.webp"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -86,7 +86,7 @@ export default function Product() {
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://i.imgur.com/7hagRM4.jpeg"
+                src="https://img2.pic.in.th/pic/7hagRM4.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -127,7 +127,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งซอง</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://i.imgur.com/oxJhFf3.jpeg"
+                src="https://img5.pic.in.th/file/secure-sv1/oxJhFf3.webp"
                 alt="น้ำแข็งซอง"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -167,7 +167,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งป่น</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://i.imgur.com/yESNfck.jpeg"
+                src="https://img5.pic.in.th/file/secure-sv1/yESNfck.webp"
                 alt="น้ำแข็งป่น"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -207,7 +207,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งแพ๊ค</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://i.imgur.com/nEG5k02.jpeg"
+                src="https://img5.pic.in.th/file/secure-sv1/nEG5k02.webp"
                 alt="น้ำแข็งหลอดแพ๊ค"
                 className="h-80 object-cover rounded-md"
                 width={600}

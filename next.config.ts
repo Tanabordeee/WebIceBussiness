@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['i.imgur.com'],
+    domains: ['img5.pic.in.th' , 'img2.pic.in.th'],
   },
   serverExternalPackages: ['mongoose'],
 };
