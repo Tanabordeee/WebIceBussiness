@@ -59,7 +59,7 @@ export default async function Home() {
               width={375}
               height={225}
               quality={60}
-              loading="lazy"    
+              priority   
               sizes="(max-width: 768px) 100vw, 500px"
             />
           </div>
