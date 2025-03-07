@@ -1,5 +1,4 @@
 import Nav from "../navbar";
-import Head from "next/head";
 import Image from "next/image";
 export const metadata = {
   title: "สินค้าของเรา - โก๋น้ำแข็ง",

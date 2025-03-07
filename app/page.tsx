@@ -1,10 +1,8 @@
 import { Suspense } from "react";
-import dynamic from "next/dynamic";
 import Nav from "./navbar";
 import MapEmbed from "./MapEmbed";
 import TelButton from "./telButton";
 import Footer from "./Footer";
-import Head from "next/head";
 import CustomerList from "./CustomerList";
 import Image from "next/image";
 export const metadata = {
