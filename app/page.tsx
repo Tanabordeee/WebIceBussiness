@@ -56,9 +56,11 @@ export default async function Home() {
               src="https://img5.pic.in.th/file/secure-sv1/jIjk5tA.webp"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
-              width={500} 
+              width={500}
               height={300}
+              quality={60}
               priority
+              sizes="(max-width: 768px) 100vw, 500px"
             />
           </div>
         </div>
@@ -99,8 +101,8 @@ export default async function Home() {
                 src="https://img5.pic.in.th/file/secure-sv1/JLhyl7q.webp"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
-                height={300} 
+                width={500}
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งหลอดเล็ก</p>
             </div>
@@ -109,8 +111,8 @@ export default async function Home() {
                 src="https://img2.pic.in.th/pic/7hagRM4.webp"
                 alt="น้ำแข็งหลอดใหญ่"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
-                height={300} 
+                width={500}
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งหลอดใหญ่</p>
             </div>
@@ -119,8 +121,8 @@ export default async function Home() {
                 src="https://img5.pic.in.th/file/secure-sv1/yESNfck.webp"
                 alt="น้ำแข็งป่น"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
-                height={300} 
+                width={500}
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งป่น</p>
             </div>
@@ -131,8 +133,8 @@ export default async function Home() {
                 src="https://img5.pic.in.th/file/secure-sv1/oxJhFf3.webp"
                 alt="น้ำแข็งซอง"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
-                height={300} 
+                width={500}
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งซอง</p>
             </div>
@@ -141,7 +143,7 @@ export default async function Home() {
                 src="https://img5.pic.in.th/file/secure-sv1/nEG5k02.webp"
                 alt="น้ำแข็งหลอดแบบแพ็ค"
                 className="h-80 w-full object-cover rounded-md"
-                width={500} 
+                width={500}
                 height={300}
               />
               <p className="mt-2 text-lg font-medium">น้ำแข็งหลอดแบบแพ็ค</p>
@@ -156,7 +158,7 @@ export default async function Home() {
                 src="https://img5.pic.in.th/file/secure-sv1/5fa30236-81b6-4195-9638-edf65d2874cf.jpg"
                 alt="ส่งน้ำแข็งในปทุมธานี"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
+                width={500}
                 height={300}
               />
               <p className="mt-2 text-lg font-medium">
@@ -168,8 +170,8 @@ export default async function Home() {
                 src="https://img5.pic.in.th/file/secure-sv1/ATyt9GE.webp"
                 alt="บริการให้เช่าถังน้ำแข็ง"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
-                height={300} 
+                width={500}
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">
                 บริการให้เช่าถังน้ำแข็ง พร้อม น้ำแข็ง
@@ -180,8 +182,8 @@ export default async function Home() {
                 src="https://img2.pic.in.th/pic/9sBoSdh.webp"
                 alt="ส่งน้ำแข็งในงาน"
                 className="h-80 w-full object-cover rounded-md"
-                width={500}  
-                height={300} 
+                width={500}
+                height={300}
               />
               <p className="mt-2 text-lg font-medium">
                 ส่งน้ำแข็งในงาน Event ต่างๆ
