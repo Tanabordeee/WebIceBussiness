@@ -53,9 +53,9 @@ export default async function Home() {
           </div>
           <div className="flex justify-center">
             <Image
-              src="https://img5.pic.in.th/file/secure-sv1/jIjk5tA.webp"
+              src="/android-chrome-512x512.png"
               alt="Ice Delivery"
-              className="max-w-full h-auto rounded-lg"
+              className="max-w-full h-auto rounded-lg "
               width={375}
               height={225}
               quality={60}
