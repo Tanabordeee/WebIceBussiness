@@ -56,10 +56,10 @@ export default async function Home() {
               src="https://img5.pic.in.th/file/secure-sv1/jIjk5tA.webp"
               alt="Ice Delivery"
               className="max-w-full h-auto rounded-lg"
-              width={500}
-              height={300}
+              width={375}
+              height={225}
               quality={60}
-              priority
+              loading="lazy"    
               sizes="(max-width: 768px) 100vw, 500px"
             />
           </div>
