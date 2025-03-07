@@ -9,6 +9,7 @@ export default function MapEmbed(){
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
+          title="แผนที่ร้านโก๋น้ำแข็ง ปทุมธานี"
         ></iframe>
       </div>
     )
