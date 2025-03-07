@@ -7,35 +7,23 @@ import Footer from "./Footer";
 import Head from "next/head";
 import CustomerList from "./CustomerList";
 import Image from "next/image";
+export const metadata = {
+  title: "ร้านน้ำแข็ง ใกล้ฉัน | บริการน้ำแข็งคุณภาพสูง",
+  description:
+    "ค้นหาบริการร้านน้ำแข็ง ใกล้ฉัน รับส่งน้ำแข็งหลอดเล็ก หลอดใหญ่ น้ำแข็งป่น และบริการเช่าถังน้ำแข็ง",
+  keywords:
+    "ร้านน้ำแข็ง ใกล้ฉัน, ส่งน้ำแข็ง ใกล้ฉัน, เช่าถังน้ำแข็ง, น้ำแข็งหลอดเล็ก, น้ำแข็งป่น, โรงน้ำแข็ง, เช่าถังน้ำแข็ง ใกล้ฉัน , ส่งน้ำแข็งในปทุมธานี , บริการทันใจ พร้อมราคาถูก",
+  openGraph: {
+    title: "ร้านน้ำแข็ง ใกล้ฉัน",
+    description:
+      "บริการน้ำแข็งหลากหลายประเภทส่งถึงมือคุณ พร้อมเช่าถังน้ำแข็งในพื้นที่ใกล้คุณ",
+    url: "https://web-ice-bussiness.vercel.app/",
+  },
+};
+
 export default async function Home() {
   return (
     <>
-      <Head>
-        <title>ร้านน้ำแข็ง ใกล้ฉัน | บริการน้ำแข็งคุณภาพสูง</title>
-        <meta
-          name="description"
-          content="ค้นหาบริการร้านน้ำแข็ง ใกล้ฉัน รับส่งน้ำแข็งหลอดเล็ก หลอดใหญ่ น้ำแข็งป่น และบริการเช่าถังน้ำแข็ง"
-        />
-        <meta
-          name="keywords"
-          content="ร้านน้ำแข็ง ใกล้ฉัน, ส่งน้ำแข็ง ใกล้ฉัน, เช่าถังน้ำแข็ง, น้ำแข็งหลอดเล็ก, น้ำแข็งป่น, โรงน้ำแข็ง, เช่าถังน้ำแข็ง ใกล้ฉัน , ส่งน้ำแข็งในปทุมธานี , บริการทันใจ พร้อมราคาถูก"
-        />
-        <style>
-          {`
-            /* Inline critical CSS here */
-            body {
-              font-family: 'Kanit', sans-serif;
-            }
-            /* Add other critical styles here */
-          `}
-        </style>
-        <meta property="og:title" content="ร้านน้ำแข็ง ใกล้ฉัน" />
-        <meta
-          property="og:description"
-          content="บริการน้ำแข็งหลากหลายประเภทส่งถึงมือคุณ พร้อมเช่าถังน้ำแข็งในพื้นที่ใกล้คุณ"
-        />
-        <meta property="og:url" content="https://web-ice-bussiness.vercel.app/" />
-      </Head>
       <Nav />
       <div className="flex flex-col items-center h-lvh">
         <div className="flex flex-col lg:flex-row w-full justify-center items-center mt-5 bg-[#EEEBD8] w-[80%] max-w-[90%] p-10 rounded-[33px]">
