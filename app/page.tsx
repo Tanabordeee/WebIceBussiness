@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import CustomerList from "./CustomerList";
 import Image from "next/image";
 export const metadata = {
-  title: "ร้านน้ำแข็ง ใกล้ฉัน | บริการน้ำแข็งคุณภาพสูง",
+  title: "ร้านโก๋น้ำแข็ง ให้บริการน้ำแข็งคุณภาพสูงและครบวงจร",
   description:
     "ค้นหาบริการร้านน้ำแข็ง ใกล้ฉัน รับส่งน้ำแข็งหลอดเล็ก หลอดใหญ่ น้ำแข็งป่น และบริการเช่าถังน้ำแข็ง",
   keywords:
