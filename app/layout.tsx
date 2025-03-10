@@ -17,26 +17,57 @@ const geistMono = localFont({
 });
 
 const kanit = Kanit({
-  subsets: ["latin"],
-  weight: ["100", "400", "700", "900"], 
+  subsets: ["latin", "thai"],
+  weight: ["100", "400", "700", "900"],
 });
 
 export const metadata: Metadata = {
-  title: "ร้านโก๋น้ำแข็ง ให้บริการน้ำแข็งครบวงจร",
-  description: "ค้นหาบริการร้านน้ำแข็ง ใกล้ฉัน รับส่งน้ำแข็งหลอดเล็ก หลอดใหญ่ น้ำแข็งป่น น้ำแข็งซอง น้ำแข็งแพ็ค และบริการเช่าถังน้ำแข็ง",
-  keywords: "น้ำแข็ง, น้ำแข็งหลอดเล็ก, น้ำแข็งหลอดใหญ่, น้ำแข็งซอง, น้ำแข็งป่น, สั่งน้ำแข็ง",
+  title: {
+    default: "ร้านโก๋น้ำแข็ง - บริการน้ำแข็งคุณภาพสูงและครบวงจร", 
+    template: "%s | ร้านโก๋น้ำแข็ง",
+  },
+  description:
+    "ร้านโก๋น้ำแข็งให้บริการน้ำแข็งคุณภาพสูง เช่น น้ำแข็งหลอดเล็ก หลอดใหญ่ ซอง ป่น และบริการเช่าถังน้ำแข็งในปทุมธานี ส่งถึงที่ ราคาถูก บริการทันใจ",
+  keywords: [
+    "ร้านน้ำแข็ง ใกล้ฉัน",
+    "ส่งน้ำแข็ง ปทุมธานี",
+    "เช่าถังน้ำแข็ง",
+    "น้ำแข็งหลอดเล็ก",
+    "น้ำแข็งหลอดใหญ่",
+    "น้ำแข็งซอง",
+    "น้ำแข็งป่น",
+    "โรงน้ำแข็ง",
+    "สั่งน้ำแข็ง",
+  ],
   openGraph: {
-    title: "ร้านโก๋น้ำแข็ง ให้บริการน้ำแข็งครบวงจร",
-    description: "เรามีการจัดส่งน้ำแข็งในรูปแบบต่างๆ เช่น น้ำแข็งหลอดเล็ก, น้ำแข็งหลอดใหญ่, น้ำแข็งซอง, น้ำแข็งป่น เพื่อให้คุณได้เลือกตามความต้องการ",
+    title: "ร้านโก๋น้ำแข็ง - บริการน้ำแข็งครบวงจร",
+    description:
+      "บริการน้ำแข็งหลากหลายประเภท เช่น น้ำแข็งหลอดเล็ก หลอดใหญ่ ซอง ป่น และเช่าถังน้ำแข็ง ส่งถึงที่ในปทุมธานี",
     url: "https://web-ice-business.vercel.app/",
     siteName: "ร้านโก๋น้ำแข็ง",
     type: "website",
+    locale: "th_TH",
+    images: [
+      {
+        url: "https://web-ice-business.vercel.app/android-chrome-512x512.png",
+        width: 512,
+        height: 512,
+        alt: "โลโก้ร้านโก๋น้ำแข็ง",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "ร้านโก๋น้ำแข็ง - บริการน้ำแข็งครบวงจร",
+    description:
+      "น้ำแข็งคุณภาพสูง ส่งถึงที่ในปทุมธานี พร้อมบริการเช่าถังน้ำแข็ง",
+    images: ["https://web-ice-business.vercel.app/android-chrome-512x512.png"],
   },
   robots: "index, follow",
   icons: {
-    icon: ['/favicon.ico?v=4'],
-    apple: ['/apple-touch-icon.png?v=4'],
-    shortcut: ['/apple-touch-icon.png'],
+    icon: "/favicon.ico?v=4",
+    apple: "/apple-touch-icon.png?v=4",
+    shortcut: "/apple-touch-icon.png",
   },
 };
 
@@ -51,7 +82,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.className} antialiased`}
       >
         {children}
-        <Analytics/>
+        <Analytics />
       </body>
     </html>
   );
