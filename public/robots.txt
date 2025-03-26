@@ -1,5 +1,7 @@
 # *
 User-agent: *
+Disallow: /login
+Disallow: /manage/
 Allow: /
 
 # Host

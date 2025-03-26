@@ -2,4 +2,5 @@
 module.exports = {
     siteUrl: "https://www.tpices.com",
     generateRobotsTxt: true,
+    exclude:["/login" , "/manage/*"]
   };
