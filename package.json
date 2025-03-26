@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "postbuild": "next-sitemap",
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
@@ -15,10 +16,11 @@
     "jose": "^5.9.6",
     "mongodb": "^6.10.0",
     "mongoose": "^8.8.1",
-    "next": "15.0.2",
+    "next": "^15.2.4",
+    "next-sitemap": "^4.2.3",
     "react": "19.0.0-rc-02c0e824-20241028",
     "react-dom": "19.0.0-rc-02c0e824-20241028",
-    "sweetalert2": "^11.14.5"
+    "sweetalert2": "^11.6.13"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
