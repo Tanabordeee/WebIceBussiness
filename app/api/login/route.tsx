@@ -9,7 +9,6 @@ interface User {
 export const POST = async (req: Request) => {
   try {
     const { name, password }: User = await req.json();
-
     if (name === process.env.NEXT_PUBLIC_NAME && password === process.env.NEXT_PUBLIC_PASSWORD) {
       const secretJWK = {
         kty: 'oct',

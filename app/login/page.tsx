@@ -2,13 +2,31 @@
 import axios from "axios";
 import Swal from "sweetalert2";
 import { useRouter } from "next/navigation";
+import { useState } from "react";
+
 export default function Login() {
     const router = useRouter();
+    const [loginAttempts, setLoginAttempts] = useState(0);
+    const [isLocked, setIsLocked] = useState(false);
+    const MAX_ATTEMPTS = 10;
+    const LOCK_TIME = 300000;
+
     const handleSubmit = async (e:React.FormEvent<HTMLFormElement>) =>{
         e.preventDefault();
+
+        if (isLocked) {
+            Swal.fire({
+                icon: "error",
+                title: "Account Locked",
+                text: "Too many failed attempts. Please try again in 5 minutes.",
+            });
+            return;
+        }
+
         const formData = new FormData(e.currentTarget);
         const name = formData.get("name") as string;
         const password = formData.get("password") as string;
+
         try{
             const res = await axios.post(`${process.env.NEXT_PUBLIC_API_Login}`, {
                 name,
@@ -16,27 +34,45 @@ export default function Login() {
             });
 
             if(res.status == 200) {
+                setLoginAttempts(0);
                 Swal.fire({
                     title : "Login Success",
                     icon : "success",
                     text : "Welcome to system!"
                 })
                 router.push("/manage/product")
-            }else{
-                Swal.fire({
-                    icon: "error",
-                    title: "Login Failure",
-                    text: "Something went wrong!",
-                  });
+            } else {
+                handleFailedLogin();
             }
-        }catch(err){
+        } catch(err) {
+            handleFailedLogin();
+        }
+    }
+
+    const handleFailedLogin = () => {
+        const newAttempts = loginAttempts + 1;
+        setLoginAttempts(newAttempts);
+        
+        if (newAttempts >= MAX_ATTEMPTS) {
+            setIsLocked(true);
+            setTimeout(() => {
+                setIsLocked(false);
+                setLoginAttempts(0);
+            }, LOCK_TIME);
+            
+            Swal.fire({
+                icon: "error",
+                title: "Account Locked",
+                text: "Too many failed attempts. Please try again in 5 minutes.",
+            });
+        } else {
             Swal.fire({
                 icon: "error",
                 title: "Login Failure",
-                text: "Something went wrong!",
-              });
+            });
         }
     }
+
     return (
         <div className="h-screen flex flex-col justify-center items-center">
             <form onSubmit={handleSubmit} className="flex flex-col gap-4">
