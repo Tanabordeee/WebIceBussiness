@@ -3,7 +3,7 @@ import { Kanit } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-
+import Head from "next/head";
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -65,9 +65,9 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   icons: {
-    icon: "/favicon.ico?v=4",
-    apple: "/apple-touch-icon.png?v=4",
-    shortcut: "/apple-touch-icon.png",
+    icon: "https://www.tpices.com/favicon.ico?v=4",
+    apple: "https://www.tpices.com/apple-touch-icon.png?v=4",
+    shortcut: "https://www.tpices.com/apple-touch-icon.png",
   },
 };
 
@@ -78,6 +78,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="th">
+      <Head>
+        <link rel="icon" type="image/x-icon" href="https://www.tpices.com/favicon.ico?v=4" />
+        <link rel="apple-touch-icon" href="https://www.tpices.com/apple-touch-icon.png?v=4" />
+      </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.className} antialiased`}
       >
