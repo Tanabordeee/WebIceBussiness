@@ -65,10 +65,24 @@ export const metadata: Metadata = {
   },
   robots: "index, follow",
   icons: {
-    icon: "https://www.tpices.com/favicon.ico?v=4",
-    apple: "https://www.tpices.com/apple-touch-icon.png?v=4",
-    shortcut: "https://www.tpices.com/apple-touch-icon.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48 32x32 16x16", type: "image/x-icon" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" }
+    ],
+    apple: { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
+    other: [
+      {
+        url: "/favicon.svg",
+        type: "image/svg+xml"
+      }
+    ]
   },
+  manifest: "/site.webmanifest",
+  appleWebApp: {
+    title: "ร้านโก๋น้ำแข็ง",
+    statusBarStyle: "default",
+    capable: true
+  }
 };
 
 export default function RootLayout({
@@ -79,8 +93,12 @@ export default function RootLayout({
   return (
     <html lang="th">
       <Head>
-        <link rel="icon" type="image/x-icon" href="https://www.tpices.com/favicon.ico?v=4" />
-        <link rel="apple-touch-icon" href="https://www.tpices.com/apple-touch-icon.png?v=4" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="ร้านโก๋น้ำแข็ง" />
+        <link rel="manifest" href="/site.webmanifest" />
       </Head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kanit.className} antialiased`}
