@@ -27,7 +27,7 @@ export default function Footer() {
           <Link href="/product" legacyBehavior>
             <a className="text-2xl hover:underline">สินค้าของเรา</a>
           </Link>
-          <Link href="/service" legacyBehavior>
+          <Link href="/services" legacyBehavior>
             <a className="text-2xl hover:underline">บริการของเรา</a>
           </Link>
         </div>
