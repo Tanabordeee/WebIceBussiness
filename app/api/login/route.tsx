@@ -1,27 +1,23 @@
 import { SignJWT, importJWK } from 'jose';
 import { cookies } from 'next/headers';
-
-interface User {
-  name: string;
-  password: string;
-  token:string;
-}
-
+import axios from 'axios';
 export const POST = async (req: Request) => {
   try {
-    const { name, password , token}: User = await req.json();
+    const form = await req.formData();
+    const token = form.get("cf-turnstile-response")?.toString();
+    const name = form.get("name")?.toString();
+    const password = form.get("password")?.toString();
+    const ip = req.headers.get("x-forwarded-for") || "";
+
+    const formData = new FormData();
+    formData.append("secret", process.env.SecretCloudFlareKey || '');
+    formData.append("response", token || '');
+    formData.append("remoteip", ip);  
+
     const url = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
-    const verifyRes = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-      body: new URLSearchParams({
-        secret: process.env.SecretCloudFlareKey || '',
-        response: token,
-      }),
-    });
-    const verifyData = await verifyRes.json();
+    const verifyRes = await axios.post(url, formData);
+    const verifyData = await verifyRes.data;
+
     if (!verifyData.success) {
       return new Response(JSON.stringify({ message: 'Invalid CAPTCHA' }), { status: 403 });
     }
