@@ -2,7 +2,18 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['img5.pic.in.th' , 'img2.pic.in.th'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'img5.pic.in.th',
+        pathname: '/**',
+      },
+      {
+        protocol: 'https',
+        hostname: 'img2.pic.in.th',
+        pathname: '/**',
+      },
+    ],
   },
   serverExternalPackages: ['mongoose'],
 };
