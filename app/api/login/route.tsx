@@ -4,11 +4,27 @@ import { cookies } from 'next/headers';
 interface User {
   name: string;
   password: string;
+  token:string;
 }
 
 export const POST = async (req: Request) => {
   try {
-    const { name, password }: User = await req.json();
+    const { name, password , token}: User = await req.json();
+    const url = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
+    const verifyRes = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: new URLSearchParams({
+        secret: process.env.SecretCloudFlareKey || '',
+        response: token,
+      }),
+    });
+    const verifyData = await verifyRes.json();
+    if (!verifyData.success) {
+      return new Response(JSON.stringify({ message: 'Invalid CAPTCHA' }), { status: 403 });
+    }
     if (name === process.env.NEXT_PUBLIC_NAME && password === process.env.NEXT_PUBLIC_PASSWORD) {
       const secretJWK = {
         kty: 'oct',
