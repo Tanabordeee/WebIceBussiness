@@ -7,7 +7,38 @@ export async function middleware(req: any) {
       const method = req.method;
       let token = req.cookies.get("token");
       
-      if(pathname === "/api/route" && ["POST" , "PUT" , "DELETE"].includes(method) || (pathname === "/manage/product" && method === "GET")){
+      if (pathname === "/api/product" && method === "GET") {
+        return NextResponse.next();
+      }
+      // if (pathname === "/api/blog" && method === "GET"){
+      //   return NextResponse.next();
+      // }
+
+
+      // if((pathname === "/api/blog" && ["POST" , "PUT" , "DELETE"].includes(method))
+      //   || (pathname === "/manage/product" && method === "GET")){
+      //   if (!token) {
+      //     return new NextResponse("Token is missing", { status: 401 });
+      //   }
+      //   const secretJWK = {
+      //     kty: 'oct',  
+      //     k: process.env.JOSE_SECRET as string
+      //   };
+      //   const secretKey = await importJWK(secretJWK, 'HS256');
+  
+      //   const { payload } = await jwtVerify(token.value, secretKey);
+  
+      //   const requestHeaders = new Headers(req.headers);
+      //   requestHeaders.set('user', JSON.stringify({ name: payload.name }));
+  
+      //   return NextResponse.next({
+      //     request: {
+      //       headers: requestHeaders,
+      //     },
+      //   });
+      // }
+
+      if((pathname === "/manage/product" && method === "GET")){
         if (!token) {
           return new NextResponse("Token is missing", { status: 401 });
         }
@@ -17,13 +48,10 @@ export async function middleware(req: any) {
         };
         const secretKey = await importJWK(secretJWK, 'HS256');
   
-  
         const { payload } = await jwtVerify(token.value, secretKey);
-  
   
         const requestHeaders = new Headers(req.headers);
         requestHeaders.set('user', JSON.stringify({ name: payload.name }));
-  
   
         return NextResponse.next({
           request: {
@@ -31,12 +59,14 @@ export async function middleware(req: any) {
           },
         });
       }
+      
       return new NextResponse("Method not allowed", { status: 405 });
     } catch (error: any) {
-
       return new NextResponse("Error: Invalid token", { status: 403 });
     }
 }
+
 export const config = {
-  matcher: ['/manage/product' , "/api/route"],
+  // matcher: ['/manage/product' , "/api/blog" , "/api/product"],
+  matcher: ['/manage/product', "/api/product"],
 };
