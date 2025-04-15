@@ -16,7 +16,7 @@ export const POST = async (req: Request) => {
 
     const url = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
     const verifyRes = await axios.post(url, formData);
-    const verifyData = await verifyRes.data;
+    const verifyData = verifyRes.data;
 
     if (!verifyData.success) {
       return new Response(JSON.stringify({ message: 'Invalid CAPTCHA' }), { status: 403 });
