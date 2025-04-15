@@ -25,7 +25,6 @@ export default function Login() {
 
         const formData = new FormData(e.currentTarget);
         const token = (document.querySelector('[name="cf-turnstile-response"]') as HTMLInputElement)?.value;
-        formData.append("cf-turnstile-response", token || "");
         try{
             const res = await axios.post(`${process.env.NEXT_PUBLIC_API_Login}`, formData , {
                 headers: {
