@@ -1,6 +1,5 @@
 import { SignJWT, importJWK } from 'jose';
 import { cookies } from 'next/headers';
-import axios from 'axios';
 export const POST = async (req: Request) => {
   try {
     const form = await req.formData();
@@ -15,8 +14,12 @@ export const POST = async (req: Request) => {
     formData.append("remoteip", ip);  
 
     const url = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
-    const verifyRes = await axios.post(url, formData);
-    const verifyData = verifyRes.data;
+    const result = await fetch(url, {
+      body: formData,
+      method: "POST",
+    });
+  
+    const verifyData = await result.json();
 
     if (!verifyData.success) {
       return new Response(JSON.stringify({ message: 'Invalid CAPTCHA' }), { status: 403 });
