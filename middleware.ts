@@ -10,35 +10,17 @@ export async function middleware(req: any) {
       if (pathname === "/api/product" && method === "GET") {
         return NextResponse.next();
       }
-      // if (pathname === "/api/blog" && method === "GET"){
-      //   return NextResponse.next();
-      // }
+      if (pathname === "/api/blog" && method === "GET"){
+        return NextResponse.next();
+      }
 
-
-      // if((pathname === "/api/blog" && ["POST" , "PUT" , "DELETE"].includes(method))
-      //   || (pathname === "/manage/product" && method === "GET")){
-      //   if (!token) {
-      //     return new NextResponse("Token is missing", { status: 401 });
-      //   }
-      //   const secretJWK = {
-      //     kty: 'oct',  
-      //     k: process.env.JOSE_SECRET as string
-      //   };
-      //   const secretKey = await importJWK(secretJWK, 'HS256');
-  
-      //   const { payload } = await jwtVerify(token.value, secretKey);
-  
-      //   const requestHeaders = new Headers(req.headers);
-      //   requestHeaders.set('user', JSON.stringify({ name: payload.name }));
-  
-      //   return NextResponse.next({
-      //     request: {
-      //       headers: requestHeaders,
-      //     },
-      //   });
-      // }
-
-      if((pathname === "/manage/product" && method === "GET")){
+      if (
+        (pathname === "/api/blog" && ["POST", "PUT", "DELETE"].includes(method)) ||
+        (pathname === "/manage/product" && method === "GET") ||
+        (pathname === "/manage/blogcreate" && method === "GET") ||
+        (pathname === "/manage/blogs" && method === "GET") ||
+        (pathname.startsWith("/manage/blogupdate/") && method === "GET") 
+      ){
         if (!token) {
           return new NextResponse("Token is missing", { status: 401 });
         }
@@ -67,6 +49,5 @@ export async function middleware(req: any) {
 }
 
 export const config = {
-  // matcher: ['/manage/product' , "/api/blog" , "/api/product"],
-  matcher: ['/manage/product', "/api/product"],
+  matcher: ['/manage/product' , "/api/blog" , "/manage/blogcreate" , "/manage/blogs" , "/manage/blogupdate" , "/api/product"],
 };
