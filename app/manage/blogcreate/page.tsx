@@ -7,6 +7,7 @@ import Swal from 'sweetalert2';
 import edjsHTML from 'editorjs-html';
 import Nav from '@/app/navbar';
 import DOMPurify from 'dompurify';
+import type { OutputData } from '@editorjs/editorjs';
 const Editor = dynamic(() => import('../blogcreate/Editor'), { ssr: false });
 
 export default function BlogCreate() {
@@ -21,17 +22,20 @@ export default function BlogCreate() {
     publishedAt: '',
   });
 
-  const [editorData, setEditorData] = useState<any>(null);
+  const [editorData, setEditorData] = useState<OutputData | null>(null);
 
-  const handleChange = (e: any) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e: any) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     const edjsParser = edjsHTML();
+    if (!editorData) {
+        return;
+      }
     let htmlContent = edjsParser.parse(editorData);
     htmlContent = DOMPurify.sanitize(htmlContent);
     const blogData = {
@@ -54,11 +58,13 @@ export default function BlogCreate() {
         title: 'สร้างบทความสำเร็จ!',
         text: 'บทความของคุณถูกสร้างเรียบร้อยแล้ว!',
       });
-    } catch (err: any) {
+    } catch (err: unknown) {
+        const errorMessage =
+        err instanceof Error ? err.message : 'เกิดข้อผิดพลาดที่ไม่คาดคิด';
       Swal.fire({
         icon: 'error',
         title: 'เกิดข้อผิดพลาด',
-        text: err.message,
+        text: errorMessage,
       });
     }
   };

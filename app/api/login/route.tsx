@@ -18,7 +18,6 @@ export const POST = async (req: Request) => {
       body: formData,
       method: "POST",
     });
-  
     const verifyData = await result.json();
 
     if (!verifyData.success) {

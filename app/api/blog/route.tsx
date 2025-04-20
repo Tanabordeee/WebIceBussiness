@@ -51,7 +51,7 @@ export async function GET(req: Request) {
     return NextResponse.json({ error: "Internal server error" }, { status: 500 });
   }
 }
-const window = new JSDOM('').window as unknown as any;
+const window = new JSDOM('').window;
 const DOMPurify = createDOMPurify(window);
 export async function POST(req: Request) {
   try {
