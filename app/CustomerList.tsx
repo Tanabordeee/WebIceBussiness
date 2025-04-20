@@ -14,7 +14,7 @@ export default function CustomerList() {
 
   async function getCustomers() {
     try {
-      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}`);
+      const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product`);
       if (response.data?.customer) {
         setCustomers(response.data.customer);
       }

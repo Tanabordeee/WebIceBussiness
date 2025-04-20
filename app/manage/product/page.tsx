@@ -16,7 +16,7 @@ export default function ManageProduct() {
   const [alt_description , SetaltDescription] = useState<string | null>(null);
   async function getProduct() {
     try {
-      const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}`);
+      const res = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product`);
       if (res.data?.customer) {
         setProduct(res.data.customer);
       }
@@ -43,7 +43,7 @@ export default function ManageProduct() {
 
     try {
       const result = await axios.put(
-        `${process.env.NEXT_PUBLIC_API_URL}`,
+        `${process.env.NEXT_PUBLIC_API_URL}/product`,
         {
           _id:updatedProduct._id,
           url: updatedProduct.url,
@@ -70,7 +70,7 @@ export default function ManageProduct() {
   };
   const handleDelete = async (id:string)=>{
     try{
-        const result = await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}?_id=${id}`);
+        const result = await axios.delete(`${process.env.NEXT_PUBLIC_API_URL}/product?_id=${id}`);
         if(result.status === 200) {
             Swal.fire({
                 title: "Delete Success",
@@ -93,7 +93,7 @@ export default function ManageProduct() {
   const handleCreate = async (e:FormEvent<HTMLFormElement>)=>{
     e.preventDefault();
     try{
-        const result = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}`,{
+        const result = await axios.post(`${process.env.NEXT_PUBLIC_API_URL}/product`,{
             url,
             alt_description
         })
