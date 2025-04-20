@@ -1,14 +1,10 @@
+'use client'
 import Nav from "@/app/navbar";
 import BlogUpdatePageHelper from "./blogupdatepage";
-type Props = {
-  params: {
-    blogname:string;
-  };
-};
-
-export default async function BlogUpdatePage({ params }: Props) {
-    const { blogname} = await params || {};
-    
+import { use } from "react";
+type Params = Promise<{blogname:string}>
+export default async function BlogUpdatePage({ params }: { params: Params }) {
+  const { blogname } = use(params); 
   return (
     <>
       <Nav />
