@@ -96,6 +96,12 @@ export default function Nav() {
             >
               หน้าแรก
             </Link>
+            <Link
+              href="/blogs"
+              className="text-xl cursor-pointer hover:underline"
+            >
+              Blogs
+            </Link>
             <button
               className="mt-4 p-2 text-white w-full rounded-lg bg-red-500"
               onClick={toggleLinks}
