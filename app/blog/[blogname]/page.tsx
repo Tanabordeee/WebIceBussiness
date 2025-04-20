@@ -1,15 +1,16 @@
 import Nav from "@/app/navbar";
 import BlogRenderPage from "./blogrenderpage";
-type PageProps = {
-  params: {
-    blogname: string;
-  };
-};
-export default async function BlogPage({ params }: PageProps) {
+
+export default async function BlogPage({
+  params,
+}: {
+  params: Promise<{ blogname: string }>;
+}) {
+  const { blogname } = await params;
   return (
     <>
       <Nav />
-      {params.blogname ? <BlogRenderPage blogname={params.blogname} /> : <>NOT FOUND</>}
+      {blogname ? <BlogRenderPage blogname={blogname} /> : <>NOT FOUND</>}
     </>
   );
 }
