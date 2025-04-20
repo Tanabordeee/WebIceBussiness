@@ -7,7 +7,7 @@ interface BlogPageProps {
   };
 }
 
-export default async function BlogPage({ params }: BlogPageProps) {
+export default function BlogPage({ params }: BlogPageProps) {
   const { blogname } = params;
   return (
     <>
