@@ -70,9 +70,14 @@ export default function BlogsPage() {
   }, []);
   return (
     <>
-      <Nav />
+    <Nav/>
+      <nav className="flex w-full justify-around items-center p-5 gap-5">
+        <Link href="/manage/product" className="bg-sky-200 p-5 rounded w-full text-center">Manage Product</Link>
+        <Link href="/manage/blogs" className="bg-amber-200 p-5 rounded w-full text-center">Manage Blogs</Link>
+        <Link href="/manage/blogcreate" className="w-full p-5 border rounded bg-green-300 hover:bg-red-200 text-center">CREATE</Link>
+      </nav>
       <div className="flex justify-center w-full">
-        <Link href="/manage/blogcreate" className="ml-5 w-[50%] p-5 border rounded-lg bg-green-300 hover:bg-red-200 text-center">CREATE</Link>
+        
 
       </div>
       {blogs && (
