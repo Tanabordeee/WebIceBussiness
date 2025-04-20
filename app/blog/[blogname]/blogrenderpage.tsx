@@ -70,7 +70,7 @@ export default function BlogRenderPage({ blogname }: BlogRenderPageProps) {
           <h1 className="text-6xl text-center font-bold">{blog.title}</h1>
           {blog.coverImage && (
             <div className="w-full h-[300px] relative overflow-hidden rounded-md mb-4 p-5 mt-5 rounded-lg">
-              <Image
+              <img
                 src={blog.coverImage}
                 alt={blog.title}
                 className="w-full h-full object-contain object-center rounded-lg"

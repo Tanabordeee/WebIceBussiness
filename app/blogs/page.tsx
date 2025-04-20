@@ -44,7 +44,7 @@ export default function BlogsPage() {
               <p className="text-xl font-semibold">{val.title}</p>
               <p className="text-sm text-gray-500 mb-3">{val.slug}</p>
               <div className="w-full aspect-video overflow-hidden rounded-lg mb-3">
-                <Image
+                <img
                   src={val.coverImage}
                   alt={val.title}
                   className="w-full h-full object-cover"
