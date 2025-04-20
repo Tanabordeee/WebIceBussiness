@@ -1,14 +1,14 @@
 import Nav from "@/app/navbar";
 import BlogRenderPage from "./blogrenderpage";
 
-type Props = {
+interface BlogPageProps {
   params: {
     blogname: string;
   };
-};
+}
 
-export default async function BlogPage({ params }: Props) {
-    const { blogname } = params || {};
+export default async function BlogPage({ params }: BlogPageProps) {
+  const { blogname } = params;
   return (
     <>
       <Nav />
