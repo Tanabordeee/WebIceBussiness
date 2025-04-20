@@ -8,7 +8,7 @@ type Props = {
 };
 
 export default async function BlogPage({ params }: Props) {
-    const { blogname } = await params || {};
+    const { blogname } = params || {};
   return (
     <>
       <Nav />
