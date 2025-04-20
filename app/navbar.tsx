@@ -48,6 +48,12 @@ export default function Nav() {
             >
               บริการของเรา
             </Link>
+            <Link
+              href="/blogs"
+              className="text-xl cursor-pointer hover:underline"
+            >
+              Blogs
+            </Link>
           </div>
         </div>
         <div className="flex items-center p-3">
