@@ -98,7 +98,7 @@ export default function Nav() {
             </Link>
             <Link
               href="/blogs"
-              className="text-xl cursor-pointer hover:underline"
+              className="text-xl cursor-pointer hover:underline rounded-lg p-2  border w-full text-center" 
             >
               Blogs
             </Link>
