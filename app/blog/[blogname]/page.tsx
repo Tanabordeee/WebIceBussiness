@@ -1,10 +1,8 @@
 import Nav from "@/app/navbar";
 import BlogRenderPage from "./blogrenderpage";
 
-type ParamsType = Promise<{ blogname: string }>;
 
-
-export default async function BlogPage({ params }: { params: ParamsType }) {
+export default async function BlogPage({params} : {params: Promise<{blogname:string}>}) {
   const { blogname } = await params;
   return (
     <>
