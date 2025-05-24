@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "ร้านโก๋น้ำแข็ง - บริการน้ำแข็งครบวงจร",
     description:
       "บริการน้ำแข็งหลากหลายประเภท เช่น น้ำแข็งหลอดเล็ก หลอดใหญ่ ซอง ป่น และเช่าถังน้ำแข็ง ส่งถึงที่ในปทุมธานี",
-    url: "https://web-ice-business.vercel.app/",
+    url: "https://www.tpices.com/",
     siteName: "ร้านโก๋น้ำแข็ง",
     type: "website",
     locale: "th_TH",
@@ -82,6 +82,13 @@ export const metadata: Metadata = {
     title: "ร้านโก๋น้ำแข็ง",
     statusBarStyle: "default",
     capable: true
+  },
+  alternates:{
+    canonical:"https://www.tpices.com/"
+  },
+  authors:[{name:"tpices"}],
+  other:{
+    publisher:"tpices"
   }
 };
 
