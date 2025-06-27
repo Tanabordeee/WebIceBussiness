@@ -54,7 +54,7 @@ body {
 .scroll-track {
   display: flex;
   width: max-content;
-  animation: scroll-x 20s linear infinite;
+  animation: scroll-x 50s linear infinite;
 }
 
 .scroll-wrapper:hover .scroll-track {
