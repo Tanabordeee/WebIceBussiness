@@ -13,7 +13,7 @@ export default function CustomerList() {
   const [customers, setCustomers] = useState<Customer[]>([]);
 
   async function getCustomers() {
-    try {
+    try{
       const response = await axios.get(`${process.env.NEXT_PUBLIC_API_URL}/product`);
       if (response.data?.customer) {
         setCustomers(response.data.customer);
@@ -26,26 +26,29 @@ export default function CustomerList() {
       }
     }
   }
-
   useEffect(() => {
       getCustomers();
   }, []);
-
+  const duplicateImage = [...customers , ...customers , ...customers];
   return (
     <div className="w-full">
       {customers.length > 0 ? (
-        <div  className="scroll-wrapper w-full">
-          <div className="scroll-track">
-            {[...customers , ...customers].map((item, index) => (
-              <div className="min-w-[200px] h-48 flex-shrink-0 p-2" key={index}>
-                <Image
+        <div  className="scroll-wrapper overflow-hidden relative">
+          <div className="scroll-track flex">
+            {duplicateImage.map((item, index) => (
+            <div 
+              key={`${item.alt_description}-${index}`}
+              className="image-item min-w-[250px] h-48 flex-shrink-0 p-2"
+            >
+              <div className="w-full h-full rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+                <img
                   src={item.url}
                   alt={item.alt_description}
-                  width={500}
-                  height={500}
                   className="object-cover w-full h-full"
+                  loading="lazy"
                 />
               </div>
+            </div>
             ))}
           </div>
         </div>

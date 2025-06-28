@@ -38,26 +38,55 @@ body {
 }
 @keyframes l3 {to{transform: rotate(1turn)}}
 
-@keyframes scroll-x {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
+
 
 .scroll-wrapper {
   overflow: hidden;
 }
+@layer components {
+  .scroll-wrapper {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+  }
 
-.scroll-track {
-  display: flex;
-  width: max-content;
-  animation: scroll-x 50s linear infinite;
-}
+  .scroll-track {
+    display: flex;
+    width: calc(250px * 27); 
+    animation: scroll-infinite 60s linear infinite;
+    will-change: transform;
+  }
 
-.scroll-wrapper:hover .scroll-track {
-  animation-play-state: paused;
-  cursor: pointer;
+  .scroll-wrapper:hover .scroll-track {
+    animation-play-state: paused;
+  }
+
+  .image-item {
+    flex-shrink: 0;
+    min-width: 250px;
+  }
+
+  @keyframes scroll-infinite {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 9));
+    }
+  }
+
+  .image-item img {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .image-item:hover img {
+    transform: scale(1.1);
+  }
+
+
+  .scroll-track {
+    backface-visibility: hidden;
+    perspective: 1000px;
+    transform: translateZ(0);
+  }
 }
