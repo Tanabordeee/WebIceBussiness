@@ -257,9 +257,12 @@ export default function Product() {
                   <Image
                     src={p.image}
                     alt={p.alt}
-                    className="h-72 w-full 2xl:w-80 object-cover rounded-xl hover:scale-105 transition-transform duration-300"
-                    width={600}
-                    height={600}
+                    className="h-[30%] w-[40%] 2xl:w-80 object-fit rounded-xl hover:scale-105 transition-transform duration-300"
+                    width={320}
+                    height={288}
+                    quality={65}
+                    sizes="(max-width: 1536px) 100vw, 320px"
+                    loading="lazy"
                   />
                 </div>
                 <div className="2xl:w-[60%]">

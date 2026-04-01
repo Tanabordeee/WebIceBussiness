@@ -193,8 +193,11 @@ export default async function Home() {
                     src={p.src}
                     alt={p.alt}
                     className="h-64 w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-                    width={500}
-                    height={300}
+                    width={400}
+                    height={256}
+                    quality={65}
+                    sizes="(max-width: 640px) 80vw, (max-width: 1024px) 80vw, 30vw"
+                    loading="lazy"
                   />
                 </div>
                 <p className="mt-3 text-lg font-semibold">{p.name}</p>
@@ -212,8 +215,11 @@ export default async function Home() {
                     src={p.src}
                     alt={p.alt}
                     className="h-64 w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-                    width={500}
-                    height={300}
+                    width={400}
+                    height={256}
+                    quality={65}
+                    sizes="(max-width: 640px) 80vw, (max-width: 768px) 45vw, 30vw"
+                    loading="lazy"
                   />
                 </div>
                 <p className="mt-3 text-lg font-semibold">{p.name}</p>
@@ -246,8 +252,11 @@ export default async function Home() {
                     src={s.src}
                     alt={s.alt}
                     className="h-64 w-full object-cover rounded-md group-hover:scale-105 transition-transform duration-300"
-                    width={500}
-                    height={300}
+                    width={400}
+                    height={256}
+                    quality={65}
+                    sizes="(max-width: 1024px) 100vw, 32vw"
+                    loading="lazy"
                   />
                 </div>
                 <p className="mt-3 text-lg font-medium whitespace-pre-line">{s.name}</p>

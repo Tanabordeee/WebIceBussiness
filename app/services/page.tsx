@@ -110,7 +110,10 @@ export default function Services() {
                 alt={s.alt}
                 width={400}
                 height={300}
+                quality={65}
+                sizes="(max-width: 1024px) 100vw, 256px"
                 className="w-full h-56 lg:h-full object-cover hover:scale-105 transition-transform duration-300"
+                loading="lazy"
               />
             </div>
             <div className="p-6 flex flex-col justify-between flex-1">
