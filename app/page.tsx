@@ -48,7 +48,7 @@ export default async function Home() {
               width={375}
               height={225}
               quality={60}
-              priority   
+              priority
               sizes="(max-width: 768px) 100vw, 500px"
             />
           </div>
@@ -87,7 +87,7 @@ export default async function Home() {
           <div className="sm:flex-col sm:items-center lg:flex-row flex flex-wrap gap-2 justify-center items-center">
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/JLhyl7q.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056312/2024-12-28_u7vtkb.jpg"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}
@@ -107,7 +107,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[32%] w-[80%] lg:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/yESNfck.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056490/pon_n4emwj.jpg"
                 alt="น้ำแข็งป่น"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}
@@ -119,7 +119,7 @@ export default async function Home() {
           <div className="flex-col flex items-center 2xl:flex 2xl:flex-row w-full mt-10 gap-2 justify-center  ">
             <div className="2xl:w-[20%] w-[80%] md:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/oxJhFf3.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056654/songice_w1dc5w.jpg"
                 alt="น้ำแข็งซอง"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}
@@ -129,7 +129,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[20%] w-[80%]  md:w-[50%] p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/nEG5k02.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056750/dophin_i75auw.jpg"
                 alt="น้ำแข็งหลอดแบบแพ็ค"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}
@@ -144,7 +144,7 @@ export default async function Home() {
           <div className="flex flex-col items-center2xl:flex flex-wrap gap-2 2xl:justify-center 2xl:flex-row">
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/5fa30236-81b6-4195-9638-edf65d2874cf.jpg"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775057234/rice_fq7ftw.jpg"
                 alt="ส่งน้ำแข็งในปทุมธานี"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}
@@ -156,7 +156,7 @@ export default async function Home() {
             </div>
             <div className="2xl:w-[32%] w-full p-2 bg-white shadow-lg rounded-lg flex flex-col items-center">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/ATyt9GE.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775057088/box_esmi9h.jpg"
                 alt="บริการให้เช่าถังน้ำแข็ง"
                 className="h-80 w-full object-cover rounded-md"
                 width={500}

@@ -13,6 +13,11 @@ const nextConfig: NextConfig = {
         hostname: 'img2.pic.in.th',
         pathname: '/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'res.cloudinary.com',
+        pathname: '/**',
+      },
     ],
   },
   serverExternalPackages: ['mongoose'],
