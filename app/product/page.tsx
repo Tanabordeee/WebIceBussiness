@@ -20,7 +20,7 @@ export const metadata = {
       "น้ำแข็งหลากหลายประเภท เช่น หลอดเล็ก หลอดใหญ่ ซอง ป่น และแพ็ค ส่งถึงที่ในปทุมธานี",
     images: [
       {
-        url: "https://img5.pic.in.th/file/secure-sv1/JLhyl7q.webp",
+        url: "https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056312/2024-12-28_u7vtkb.jpg",
         width: 600,
         height: 600,
         alt: "น้ำแข็งหลอดเล็ก",
@@ -50,7 +50,7 @@ export default function Product() {
             </h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/JLhyl7q.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056312/2024-12-28_u7vtkb.jpg"
                 alt="น้ำแข็งหลอดเล็ก"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -137,7 +137,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งซอง</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/oxJhFf3.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056654/songice_w1dc5w.jpg"
                 alt="น้ำแข็งซอง"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -177,7 +177,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งป่น</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/yESNfck.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056490/pon_n4emwj.jpg"
                 alt="น้ำแข็งป่น"
                 className="h-80 object-cover rounded-md"
                 width={600}
@@ -217,7 +217,7 @@ export default function Product() {
             <h2 className="font-semibold text-3xl">จุดเด่นของน้ำแข็งแพ๊ค</h2>
             <div className="flex flex-col 2xl:flex-row justify-between mt-16">
               <Image
-                src="https://img5.pic.in.th/file/secure-sv1/nEG5k02.webp"
+                src="https://res.cloudinary.com/dlwgvzoyg/image/upload/v1775056750/dophin_i75auw.jpg"
                 alt="น้ำแข็งหลอดแพ๊ค"
                 className="h-80 object-cover rounded-md"
                 width={600}
