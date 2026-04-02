@@ -252,12 +252,12 @@ export default function Product() {
               <h2 className="font-semibold text-2xl lg:text-3xl mb-6 text-[#38878E]">
                 {p.heading}
               </h2>
-              <div className="flex flex-col 2xl:flex-row justify-between gap-6">
+              <div className="flex flex-col 2xl:flex-row justify-between gap-3">
                 <div className="overflow-hidden rounded-xl flex-shrink-0">
                   <Image
                     src={p.image}
                     alt={p.alt}
-                    className="h-[30%] w-[40%] 2xl:w-80 object-fit rounded-xl hover:scale-105 transition-transform duration-300"
+                    className="h-full w-full 2xl:w-80 object-fit rounded-xl hover:scale-105 transition-transform duration-300"
                     width={320}
                     height={288}
                     quality={65}
