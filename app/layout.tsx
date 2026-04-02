@@ -297,13 +297,6 @@ export default function RootLayout({
   return (
     <html lang="th">
       <head>
-        {/* Preconnect to external image CDNs — ลด latency */}
-        <link rel="preconnect" href="https://res.cloudinary.com" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://res.cloudinary.com" />
-        <link rel="preconnect" href="https://img2.pic.in.th" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://img2.pic.in.th" />
-        <link rel="preconnect" href="https://img5.pic.in.th" crossOrigin="anonymous" />
-        <link rel="dns-prefetch" href="https://img5.pic.in.th" />
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

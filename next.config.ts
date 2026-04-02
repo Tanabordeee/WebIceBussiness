@@ -26,23 +26,9 @@ const nextConfig: NextConfig = {
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
   },
   serverExternalPackages: ["mongoose"],
-  // เพิ่ม preconnect headers สำหรับ external image domains
+  // Removed redundant preconnect headers as they are unused for initial page load
   async headers() {
-    return [
-      {
-        source: "/(.*)",
-        headers: [
-          {
-            key: "Link",
-            value: [
-              "<https://res.cloudinary.com>; rel=preconnect",
-              "<https://img2.pic.in.th>; rel=preconnect",
-              "<https://img5.pic.in.th>; rel=preconnect",
-            ].join(", "),
-          },
-        ],
-      },
-    ];
+    return [];
   },
 };
 

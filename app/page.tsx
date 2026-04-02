@@ -126,6 +126,7 @@ export default async function Home() {
               height={225}
               quality={60}
               priority
+              fetchPriority="high"
               sizes="(max-width: 768px) 100vw, 500px"
             />
           </div>
