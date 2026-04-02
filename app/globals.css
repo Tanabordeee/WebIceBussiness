@@ -22,6 +22,12 @@ body {
   height: 100vh;
 }
 
+html,
+body {
+  background-color: #ffffff !important;
+  color: #000000 !important;
+}
+
 /* HTML: <div class="loader"></div> */
 .loader {
   width: 100px;
